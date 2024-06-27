@@ -1,0 +1,35 @@
+:root {
+    --primaria: #915f32;
+    --segundaria: #ce9056;
+    --terciaria: #e1e6eb;
+    --preto: white;
+    --branco: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+    background-color: var(--primaria);
+    padding: 1rem;
+}
+
+nav {
+
+    background-color: var(--segundaria);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+
+}
+
+.logo-busca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
