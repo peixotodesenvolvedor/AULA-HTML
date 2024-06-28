@@ -67,8 +67,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+main{
+    flex-grow: 1;
+    background-color: var(--terciaria);
+}
 
-main {
+#index {
     flex-grow: 1;
     background-image: url(/imgs/sol.jpg);
     background-repeat: no-repeat;
