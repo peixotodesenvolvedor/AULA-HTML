@@ -1,12 +1,12 @@
-
 /* acessa o elemento root e crie variraveis global*/
 :root {
     --primaria: #915f32;
     --segundaria: #ce9056;
     --terciaria: #e1e6eb;
-    --preto: white;
-    --branco: black;
+    --preto: black;
+    --branco: white;
 }
+
 /*acessa todos os elemento, 
 remove todas as margens 
 revove toos os paddong 
@@ -16,13 +16,18 @@ bordas margens e paddings*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
-/* seciona o header, coloca a cor de fundo e um espacamento interno*/
-header {
+
+/* seciona o header e o footer, coloca a cor de fundo e um espacamento interno*/
+header,
+footer {
 
     background-color: var(--primaria);
     padding: 1rem;
+
 }
+
 /*seciona o nav, coloca a cor de fundo 
 muda o display para grid 
 cria grade de 5 colunas de largura igual 
@@ -34,9 +39,11 @@ nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
+    align-items: center;
     padding: 0.25rem;
     gap: 0.5rem;
 }
+
 /* seciona todos os links dentro de navs
 muda a cor da letra ea exibição do ponteiro do mouse para mão*/
 nav a {
@@ -44,6 +51,7 @@ nav a {
     color: var(--preto);
     cursor: pointer;
 }
+
 /*qualquer iten com essa classe 
 muda o display para flex
 coloca o espaço vazio da horizontal no meio dos elementos
@@ -52,4 +60,38 @@ alinha o itens na vertical com base no seu centro  */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    background-image: url(/imgs/sol.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--branco);
+    text-align: center;
+}
+
+#copy {
+    text-align: start;
+}
+
+.alinhar {
+    display: flex;
+    align-items: center;
+}
+
+.img-fim img{
+    margin: 0;
 }
