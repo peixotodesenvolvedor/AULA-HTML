@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 /* acessa o elemento root e crie variraveis global*/
 :root {
     --primaria: #915f32;
@@ -98,4 +99,13 @@ footer {
 
 .img-fim img{
     margin: 0;
+}
+
+.quem_somos {
+
+    text-align: center;
+    font-family: "Elite Especial", system-ui; 
+    font-size: 20px;
+    letter-spacing: 5px;
+        
 }
