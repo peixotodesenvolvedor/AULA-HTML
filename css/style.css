@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 /* acessa o elemento root e crie variraveis global*/
 :root {
     --primaria: #915f32;
@@ -68,9 +69,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-main{
+
+main {
     flex-grow: 1;
     background-color: var(--terciaria);
+    display: flex;
+    justify-content: center;
 }
 
 #index {
@@ -97,26 +101,76 @@ footer {
     align-items: center;
 }
 
-.img-fim img{
+.img-fim img {
     margin: 0;
 }
 
 .quem_somos {
 
     text-align: center;
-    font-family: "Elite Especial", system-ui; 
+    font-family: "Elite Especial", system-ui;
     font-size: 20px;
     letter-spacing: 5px;
     margin: 10px;
     vertical-align: auto;
-       
+    
 }
 
-.Contato{
+.contatos {
+    text-align: center;
+    font-size: 30px;
+    background-position-x:  center;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px
+}
 
-    
+.login-box {
+    /* Estilos opcionais para melhorar a aparência */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
 
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ce9056;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
+.login-box input[type="submit"]:hover {
+    background-color: 0;
 }
