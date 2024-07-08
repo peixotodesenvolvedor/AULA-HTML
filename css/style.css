@@ -174,3 +174,31 @@ footer {
 .login-box input[type="submit"]:hover {
     background-color: 0;
 }
+
+.categorias {
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    text-align: center; 
+    flex-direction: column;
+    }
+
+.categoria {
+    padding: 20px;
+    margin: 20px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.categoria img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.categorias > h2 {
+    margin: 20px;
+}
+
+#container-categorias {
+    display: flex;
+}
