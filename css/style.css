@@ -181,18 +181,17 @@ footer {
     padding: 20px;
     text-align: center; 
     flex-direction: column;
-    }
+}
 
 .categoria {
     padding: 20px;
     margin: 20px 0px;
     text-align: center;
-    width: 100%;
 }
 
 .categoria img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     margin-top: 10px;
 }
 .categorias > h2 {
@@ -201,4 +200,5 @@ footer {
 
 #container-categorias {
     display: flex;
+    flex-wrap: wrap;
 }
