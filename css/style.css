@@ -44,6 +44,8 @@ nav {
     align-items: center;
     padding: 0.25rem;
     gap: 0.5rem;
+    justify-content: center;
+
 }
 
 /* seciona todos os links dentro de navs
@@ -99,6 +101,7 @@ footer {
 .alinhar {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .img-fim img {
@@ -183,6 +186,13 @@ footer {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
+    text-align: center;
+}
+
+#main-favoritos > h2 {
+    margin-bottom: 10px;
+
+
 }
 
 .categorias {
